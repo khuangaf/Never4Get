@@ -20,7 +20,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_register_new_item"
-        app:menu="@menu/activity_register_new_item_drawer" />
+        app:menu="@menu/activity_main_drawer" />
 
 
 

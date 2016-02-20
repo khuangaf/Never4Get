@@ -5,10 +5,17 @@ package com.example.huang.never4get;
  */
 public class Item {
     private boolean inRoom;
+    private String name;
+    private String QRCode;
     private double x;
     private double y;
     private double z;
 
+    public Item(String name,String QRCode)
+    {
+        this.name = name;
+        this.QRCode = QRCode;
+    }
     public boolean isInRoom()
     {
         return inRoom;
@@ -29,6 +36,7 @@ public class Item {
         return z;
     }
 
+    public String getName() {return name;}
     public void setX(double x)
     {
         this.x = x;
@@ -42,5 +50,7 @@ public class Item {
     {
         this.z = z;
     }
+
+
 
 }

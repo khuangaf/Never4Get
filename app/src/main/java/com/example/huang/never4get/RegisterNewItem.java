@@ -44,7 +44,7 @@ public class RegisterNewItem extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        AlarmHelper.PopAlarm(this);
+
 
     }
 
@@ -102,7 +102,26 @@ public class RegisterNewItem extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-
+        if (id == R.id.nav_home)
+        {
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
+        }
+        else if(id == R.id.nav_periodic)
+        {
+            Intent intent = new Intent(this,PeriodicEvent.class);
+            startActivity(intent);
+        }
+        else if(id == R.id.nav_single)
+        {
+            Intent intent = new Intent(this,SingleEvent.class);
+            startActivity(intent);
+        }
+        else if(id == R.id.nav_settings)
+        {
+            Intent intent = new Intent(this,Settings.class);
+            startActivity(intent);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
