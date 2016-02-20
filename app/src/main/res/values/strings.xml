@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Never4Get</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register_new_item">Register New Item</string>
+</resources>
