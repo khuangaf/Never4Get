@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterNewItem extends AppCompatActivity
@@ -71,6 +72,8 @@ public class RegisterNewItem extends AppCompatActivity
 
             if (resultCode == RESULT_OK) {
                 String contents = data.getStringExtra("SCAN_RESULT");
+                TextView textView = (TextView) findViewById(R.id.code);
+                textView.setText(contents);
             }
             if(resultCode == RESULT_CANCELED){
                 //handle cancel

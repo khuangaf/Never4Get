@@ -1,6 +1,8 @@
 package com.example.huang.never4get;
 
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.support.v7.app.NotificationCompat;
 
 /**
@@ -13,6 +15,7 @@ public class AlarmHelper {
                 (NotificationCompat.Builder) new NotificationCompat.Builder(activity.getBaseContext())
                         .setContentTitle("My notification")
                         .setContentText("Hello World!");
+
 
     }
 }
